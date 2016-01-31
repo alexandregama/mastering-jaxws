@@ -22,6 +22,6 @@ public interface TimerServer {
 	String getTimeAsString();
 	
 	@WebMethod
-	String getTimeAsElapsed();
+	long getTimeAsElapsed();
 	
 }
