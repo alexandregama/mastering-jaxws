@@ -13,7 +13,7 @@ import javax.jws.WebService;
  *
  */
 
-@WebService(endpointInterface = "TimerServer")
+@WebService(endpointInterface = "com.mastering.jaxws.timerserver.TimerServer")
 public class TimerServerImpl implements TimerServer {
 
 	@Override
