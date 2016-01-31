@@ -11,6 +11,7 @@ import javax.jws.WebService;
  * Note that we are usind the property endpointInterface to links to 
  * SEI. This class is a Service Implementation Bean.
  *
+ * Note that we need to use the FQN in the endpointInterface property
  */
 
 @WebService(endpointInterface = "com.mastering.jaxws.timerserver.TimerServer")
