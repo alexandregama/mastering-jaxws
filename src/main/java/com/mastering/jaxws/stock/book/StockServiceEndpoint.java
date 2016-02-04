@@ -10,7 +10,7 @@ public class StockServiceEndpoint {
 
 	private Books books = new MapBooksDao();
 	
-	@WebMethod(operationName = "bookQuantityByCode")
+	@WebMethod(operationName = "bookQuantityByCode", action = "RetrieveQuantityFromCode")
 	@WebResult(name = "bookQuantity")
 	public int getQuantityFromCode(@WebParam(name = "code") String code) {
 		Book book = books.findQuantityFrom(code);
