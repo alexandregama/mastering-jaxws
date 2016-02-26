@@ -7,5 +7,7 @@ public interface Books {
 	Book findQuantityFrom(String code);
 	
 	List<Book> findQuantityFromListOf(List<String> codes);
+
+	List<Book> findByListOf(List<String> codes);
 	
 }
