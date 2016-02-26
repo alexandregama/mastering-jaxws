@@ -29,4 +29,13 @@ public class MapBooksDao implements Books {
 		return books;
 	}
 
+	@Override
+	public List<Book> findByListOf(List<String> codes) {
+		List<Book> list = new ArrayList<>();
+		
+		codes.forEach(code -> list.add(database.get(code)));
+		
+		return list;
+	}
+
 }

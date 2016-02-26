@@ -1,5 +1,7 @@
 package com.mastering.jaxws.stock.book;
 
+import java.util.List;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -18,4 +20,11 @@ public class StockServiceEndpoint {
 		return book.getQuantity();
 	}
 	
+	@WebMethod(operationName = "booksFromItsCode")
+	@WebResult(name = "booksList")
+	public List<Book> getQuantityFromListofCodes(@WebParam(name = "codes") List<String> codes) {
+		List<Book> listOfBooks = books.findByListOf(codes);
+		
+		return listOfBooks;
+	}
 }
