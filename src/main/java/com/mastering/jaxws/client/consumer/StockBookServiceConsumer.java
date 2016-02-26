@@ -1,4 +1,7 @@
-package com.mastering.jaxws.client;
+package com.mastering.jaxws.client.consumer;
+
+import client.StockServiceEndpoint;
+import client.StockServiceEndpointService;
 
 public class StockBookServiceConsumer {
 

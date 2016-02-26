@@ -1,5 +1,5 @@
 
-package com.mastering.jaxws.client;
+package client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
